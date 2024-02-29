@@ -1,0 +1,31 @@
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+}
+
+label .required {
+  color: red;
+  font-size: 0.85rem;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input.no-margin {
+  margin: 0px;
+}
+
+input:invalid {
+  border: none;
+  border-radius: 5px;
+  background-color: ivory;
+  outline: 1px solid red;
+}

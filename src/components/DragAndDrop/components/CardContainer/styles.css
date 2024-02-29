@@ -1,0 +1,49 @@
+.container {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.list .container {
+  height: 215px;
+  width: calc(100% - 10px);
+  margin: 5px auto;
+}
+
+.list.fixeds .container {
+  height: calc(50% - 10px);
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.container-header h3 {
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 50%;
+}
+
+.container-header button {
+  margin-left: 10px;
+}
+
+.container-content {
+  padding: 10px 0;
+  overflow-y: auto;
+  max-height: 90%;
+}
+
+.list:not(.fixeds) .container-content {
+  overflow-y: visible;
+  overflow-x: auto;
+  max-width: calc(100% - 10px);
+  display: flex;
+  align-self: flex-start;
+  justify-content: flex-start;
+}

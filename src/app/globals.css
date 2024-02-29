@@ -1,0 +1,130 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+hr {
+  margin: 1px 0px;
+}
+
+form,
+.float-content {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  width: 300px;
+  padding: 10px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+button:disabled,
+button[disabled] {
+  cursor: not-allowed;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+button.sm {
+  width: 100px;
+  margin: 0px;
+}
+
+button.m {
+  width: 150px;
+  margin: 0px;
+}
+
+button.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+button.icon.xl {
+  font-size: 20px;
+}
+
+button:not(:disabled):hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+button.icon.green:hover {
+  background-color: #008f39;
+  color: white;
+}
+
+button.icon.red:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+.message {
+  width: 300px;
+  overflow: hidden;
+  word-wrap: break-word;
+  white-space: normal;
+  margin-bottom: 20px;
+}
+
+.message.center {
+  text-align: center;
+}
+
+.message.error {
+  color: red;
+}
+
+.message.success {
+  color: #008f39;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

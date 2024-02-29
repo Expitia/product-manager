@@ -1,0 +1,41 @@
+.product {
+  margin: 4px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list .product {
+  width: 250px;
+  min-width: 250px;
+}
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-header h4 {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 50%;
+  white-space: nowrap;
+}
+
+.product-body {
+  overflow-y: auto;
+}
+
+.product-body p {
+  color: #666;
+}
+
+.product-footer small {
+  color: #999;
+}

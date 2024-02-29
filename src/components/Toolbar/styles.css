@@ -1,0 +1,27 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  z-index: 1;
+}
+
+.action {
+  display: flex;
+}
+
+.action button {
+  margin: 2px;
+}
+.action .message {
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

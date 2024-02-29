@@ -1,0 +1,29 @@
+.grid,
+.list {
+  display: grid;
+  overflow-y: auto;
+  margin-top: 70px;
+  width: 100vw;
+  height: calc(100vh - 70px);
+}
+
+.list.shared {
+  width: calc(100vw - 300px);
+}
+
+.list.fixeds {
+  width: 300px;
+}
+
+.grid {
+  grid-gap: 5px;
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
